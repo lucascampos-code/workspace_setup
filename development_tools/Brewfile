@@ -1,0 +1,13 @@
+brew 'go@1.14'
+brew 'go@1.16'
+brew 'openjdk@11'
+brew 'node@16'
+brew 'gnupg'
+brew 'git-crypt'
+brew 'mysql-client@5.7'
+brew 'jq'
+brew 'mockery'
+
+cask 'intellij-idea'
+cask 'goland'
+cask 'webstorm'

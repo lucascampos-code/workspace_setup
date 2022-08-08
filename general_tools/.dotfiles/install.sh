@@ -3,9 +3,14 @@
 set -e
 
 echo
-echo "$(tput bold)~~~ Installing brew $(tput sgr0)"
-if ! [ -x "$(command -v brew)" ]; then
+echo "$(tput bold)~~~ Installing xcode-select $(tput sgr0)"
+if ! [ -x "$(xcode-select -p)" ]; then
   xcode-select --install
+else
+  echo "    Already installed, skipping."
+fi
+echo
+if ! [ -x "$(command -v brew)" ]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
   echo "    Already installed, skipping."

@@ -11,6 +11,7 @@ cask 'rectangle'
 cask 'postman'
 cask 'font-fira-code-nerd-font'
 cask 'session-manager-plugin'
+cask 'pop'
 
 brew 'bash'
 brew 'coreutils'

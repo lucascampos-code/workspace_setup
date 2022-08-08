@@ -19,7 +19,7 @@ echo
 
 #brew update
 #brew tap homebrew/bundle
-#brew bundle
+brew bundle
 
 echo "$(tput bold)~~~ Installing omz $(tput sgr0)"
 if ! [ -d ~/.oh-my-zsh ]; then
@@ -36,3 +36,4 @@ else
   echo "    ~/.zshrc already exists. Leaving it alone."
 fi
 echo
+

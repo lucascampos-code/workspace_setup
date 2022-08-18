@@ -2,6 +2,9 @@
 
 set -e
 
+
+cp -r . ~/.dotfiles 
+
 echo
 echo "$(tput bold)~~~ Installing xcode-select $(tput sgr0)"
 if ! [ -x "$(xcode-select -p)" ]; then

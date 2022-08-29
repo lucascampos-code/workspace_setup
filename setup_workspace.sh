@@ -18,7 +18,7 @@ while [ true ] ; do
       1* )
         echo "Installing Development Tools..."
 
-        cd workspace_setup/development_tools/
+        cd development_tools/
         ./install.sh > /dev/null
 
         echo "Installation finished! Please check any shown errors."
@@ -27,7 +27,7 @@ while [ true ] ; do
       2* )
         echo "Installing General Tools..."
 
-        cd workspace_setup/general_tools/.dotfiles/
+        cd general_tools/.dotfiles/
         ./install.sh > /dev/null
 
         echo "Installation finished! Please check any shown errors."
@@ -35,7 +35,7 @@ while [ true ] ; do
         exit;;
       3* )
         echo "Installing all tools, starting with Development Tools..."
-        cd workspace_setup/development_tools/
+        cd development_tools/
         ./install.sh > /dev/null
 
         echo "Development Tools installed, moving on to General Tools..."

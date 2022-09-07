@@ -1,5 +1,12 @@
 #!/bin/sh
 
+if ! [ -x "$(command -v brew)" ]; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+  echo "    Already installed, skipping."
+fi
+echo
+
 brew bundle
 
 echo "$(tput bold)~~~ Creating symbolic link for OpenJDK 11 ... $(tput sgr0)"

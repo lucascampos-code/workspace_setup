@@ -1,4 +1,4 @@
-tap 'cloudfoundry/tap'
+tap 'cloudfoundry/tap/cf-cli@7'
 tap 'homebrew/cask-fonts'
 
 cask 'google-chrome'
